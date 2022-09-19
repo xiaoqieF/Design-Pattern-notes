@@ -23,7 +23,7 @@ namespace factoryMethod {
     class TrainFactory: public CarFactory {
     public:
         std::shared_ptr<Car> createCar() override {
-            return std::make_shared<Train>("FuXin", "yellow");
+            return std::make_shared<Train>("FuXing", "yellow");
         }
     };
 }
