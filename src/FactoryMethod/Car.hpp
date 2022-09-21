@@ -14,6 +14,7 @@ class Car {
 public:
     Car(std::string name, std::string color) : name_(std::move(name)), color_(std::move(color)) {}
     virtual void use() = 0;
+    virtual ~Car() = default;
 
 protected:
     std::string name_;

@@ -20,5 +20,12 @@ set(SINGLETON_SRC_LIST
         src/Singleton/main.cc)
 add_executable(singleton ${SINGLETON_SRC_LIST})
 
+set(ADAPTER_SRC_LIST
+        src/Adapter/Print.hpp
+        src/Adapter/Banner.hpp
+        src/Adapter/main.cc
+        )
+add_executable(adapter ${ADAPTER_SRC_LIST})
+
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)

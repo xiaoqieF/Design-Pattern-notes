@@ -11,6 +11,7 @@ namespace factoryMethod {
     class CarFactory{
     public:
         virtual std::shared_ptr<Car> createCar() = 0;
+        virtual ~CarFactory() = default;
     };
 
     class SportCarFactory : public CarFactory {

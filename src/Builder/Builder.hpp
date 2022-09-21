@@ -18,6 +18,8 @@ public:
     virtual void buildWheel(const std::string& wheel) {}
     virtual std::shared_ptr<Car> getCar() { return nullptr; }
 
+    virtual ~CarBuilder() = default;
+
 protected:
     CarBuilder() = default;
 
