@@ -27,5 +27,17 @@ set(ADAPTER_SRC_LIST
         )
 add_executable(adapter ${ADAPTER_SRC_LIST})
 
+set(BRIDGE_SRC_LIST
+        src/Bridge/Color.hpp
+        src/Bridge/Shape.hpp
+        src/Bridge/main.cc)
+add_executable(bridge ${BRIDGE_SRC_LIST})
+
+set(DECORATOR_SRC_LIST
+        src/Decorator/main.cc
+        src/Decorator/Shape.hpp
+        src/Decorator/ShapeDecorator.hpp)
+add_executable(decorator ${DECORATOR_SRC_LIST})
+
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
