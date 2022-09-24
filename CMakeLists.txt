@@ -39,5 +39,11 @@ set(DECORATOR_SRC_LIST
         src/Decorator/ShapeDecorator.hpp)
 add_executable(decorator ${DECORATOR_SRC_LIST})
 
+set(FACADE_SRC_LIST
+        src/Facade/main.cc
+        src/Facade/Shape.hpp
+        src/Facade/ShapeFacade.h)
+add_executable(facade ${FACADE_SRC_LIST})
+
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
