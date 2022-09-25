@@ -45,5 +45,11 @@ set(FACADE_SRC_LIST
         src/Facade/ShapeFacade.h)
 add_executable(facade ${FACADE_SRC_LIST})
 
+set(FLYWEIGHT_SRC_LIST
+        src/Flyweight/main.cc
+        src/Flyweight/Shape.hpp
+        src/Flyweight/ShapeFactory.hpp)
+add_executable(flyweight ${FLYWEIGHT_SRC_LIST})
+
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
