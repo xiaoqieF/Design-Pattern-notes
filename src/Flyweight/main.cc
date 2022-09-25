@@ -9,7 +9,7 @@ using namespace flyweight;
 
 int main() {
     std::vector<std::string> colors {"Red", "Blue", "Green", "White", "Black"};
-    std::default_random_engine e;
+    std::default_random_engine e(std::random_device{}());
     std::uniform_int_distribution<size_t> u(0, 4);
     for (int i=0; i<20; ++i) {
         auto circle = ShapeFactory::getCircle(colors[u(e)]);

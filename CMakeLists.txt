@@ -51,5 +51,11 @@ set(FLYWEIGHT_SRC_LIST
         src/Flyweight/ShapeFactory.hpp)
 add_executable(flyweight ${FLYWEIGHT_SRC_LIST})
 
+set(PROXY_SRC_LIST
+        src/Proxy/main.cc
+        src/Proxy/GoodService.hpp
+        src/Proxy/OrangeServiceProxy.hpp)
+add_executable(proxy ${PROXY_SRC_LIST})
+
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
