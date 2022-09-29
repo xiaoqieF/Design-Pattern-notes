@@ -57,5 +57,10 @@ set(PROXY_SRC_LIST
         src/Proxy/OrangeServiceProxy.hpp)
 add_executable(proxy ${PROXY_SRC_LIST})
 
+set(CHAIN_SRC_LIST
+        src/Chain/main.cc
+        src/Chain/Logger.hpp)
+add_executable(chain ${CHAIN_SRC_LIST})
+
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
