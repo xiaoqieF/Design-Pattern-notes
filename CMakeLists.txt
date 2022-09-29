@@ -69,5 +69,10 @@ set(COMMAND_SRC_LIST
         src/Command/Invoker.hpp)
 add_executable(command ${COMMAND_SRC_LIST})
 
+set(ITERATOR_SRC_LIST
+        src/Iterator/main.cc
+        src/Iterator/Array.hpp)
+add_executable(iterator ${ITERATOR_SRC_LIST})
+
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
