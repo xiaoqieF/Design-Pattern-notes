@@ -74,5 +74,12 @@ set(ITERATOR_SRC_LIST
         src/Iterator/Array.hpp)
 add_executable(iterator ${ITERATOR_SRC_LIST})
 
+set(MEDIATOR_SRC_LIST
+        src/Mediator/main.cc
+        src/Mediator/User.cc
+        src/Mediator/ChatRoom.hpp)
+add_executable(mediator ${MEDIATOR_SRC_LIST})
+target_include_directories(mediator PRIVATE src/Mediator)
+
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
