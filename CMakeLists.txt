@@ -81,5 +81,12 @@ set(MEDIATOR_SRC_LIST
 add_executable(mediator ${MEDIATOR_SRC_LIST})
 target_include_directories(mediator PRIVATE src/Mediator)
 
+set(OBSERVER_SRC_LIST
+        src/Observer/main.cc
+        src/Observer/Subject.hpp
+        src/Observer/Observer.cc)
+add_executable(observer ${OBSERVER_SRC_LIST})
+target_include_directories(observer PRIVATE src/Observer)
+
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
 set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
